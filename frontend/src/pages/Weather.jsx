@@ -18,7 +18,7 @@ const Weather = () => {
     setError("");
     setWeather(null);
     try {
-      const response = await axios.post("http://localhost:8008/api/weather", {
+      const response = await axios.post("https://weather-app-mern-pns0.onrender.com/api/weather", {
         city: city,
       });
       setWeather(response.data);
